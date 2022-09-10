@@ -6,7 +6,7 @@
 /*   By: madanir <student.42kocaeli.com.tr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 17:37:02 by madanir           #+#    #+#             */
-/*   Updated: 2022/08/30 11:58:15 by madanir          ###   ########.tr       */
+/*   Updated: 2022/09/10 12:18:25 by madanir          ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,21 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar('-');
 		ft_putchar('2');
-		nb = 147483648;
+		ft_putnbr(147483648);
 	}
-	if (nb < 0)
+	else if (nb < 0)
 	{
 		ft_putchar('-');
-		nb *= -1;
+		nb = -nb;
+		ft_putnbr(nb);
 	}
-	if (nb < 10)
-	{
-		ft_putchar(nb + 48);
-	}
-	else
+	else if (nb > 9)
 	{
 		ft_putnbr(nb / 10);
 		ft_putnbr(nb % 10);
+	}
+	else
+	{
+		ft_putchar(nb + 48);
 	}
 }
