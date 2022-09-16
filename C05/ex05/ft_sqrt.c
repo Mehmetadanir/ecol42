@@ -6,7 +6,7 @@
 /*   By: madanir <student.42kocaeli.com.tr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:28:45 by madanir           #+#    #+#             */
-/*   Updated: 2022/09/13 14:28:48 by madanir          ###   ########.tr       */
+/*   Updated: 2022/09/15 20:00:06 by madanir          ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_sqrt(int nb)
 		return (1);
 	if (number >= 2)
 	{
-		while (i * i <= b)
+		while (i * i <= number)
 		{
-			if (i * i == b)
+			if (i * i == number)
 			{
 				return (i);
 			}
@@ -39,7 +39,6 @@ int	ft_sqrt(int nb)
 /*
 int	main()
 {
-	printf("%d\n",ft_sqrt(0));
-	printf("%d",ft_sqrt(2147483647);
-}
-*/
+	printf("%d\n",ft_sqrt(25));
+	printf("%d",ft_sqrt(2147483647));
+}*/
